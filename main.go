@@ -8,20 +8,6 @@ import (
 	"time"
 )
 
-// - Create HTTP Server
-//  |- should respond to server requests on localhost
-//  |- should be able to connect to local running mysql instances
-//  |- should act as a proxy for sql commands
-//  |- should have a built in JWT auth system to handle secure requests from the front end
-
-// - Server Database
-//  |- there should be a dedicated server database strictly for user registration / storing tokens and validating users.
-
-// - Create Client project
-//  |- the client project should have some UI that caters for the ability to write sql code.
-//  |- the ui should also have the ability to execute sql code and display the results in table format.
-//  |- the ui should display the results in horizontal datatable format
-
 func main() {
 	http.HandleFunc("/", homePage)
 	_ = http.ListenAndServe(":8080", nil)

@@ -1,5 +1,6 @@
-/bin
-/packages
+bin/
+packages/
+.idea/
 *.exe
 *.exe~
 *.dll
